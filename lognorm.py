@@ -18,8 +18,8 @@ for i in range(len(cancers)):
     year.append(cancers[i][0])
     male.append(cancers[i][1])
     female.append(cancers[i][2])
-plt.xlim(year)
-plt.hist(male ,bins=63, align='mid')
-# plt.hist(female, align='mid')
-# plt.hist(year, align='mid')
+
+plt.xlabel("Year", fontsize=20)  
+plt.ylabel("Fatalities", fontsize=20) 
+plt.bar(year, male, width=0.6)
 plt.show()
