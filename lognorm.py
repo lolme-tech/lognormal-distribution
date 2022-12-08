@@ -23,3 +23,14 @@ plt.xlabel("Year", fontsize=20)
 plt.ylabel("Fatalities", fontsize=20) 
 plt.bar(year, male, width=0.6)
 plt.show()
+#平均値
+mean=np.mean(male)
+#分散値
+var=np.var(male)
+#対数平均
+mu=np.log(mean/np.sqrt(1+var/(mean**2)))
+#対数標準偏差
+std=np.log(1+np.var(male)/(np.mean(male)**2))
+sigma=np.sqrt(std)
+
+
