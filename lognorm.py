@@ -28,7 +28,7 @@ for i in range(len(cancers)):
     year.append(cancers[i][0])
     male.append(cancers[i][1])
     female.append(cancers[i][2])
-
+#男性の死亡者数のプロット
 plt.xlabel("Year", fontsize=20)  
 plt.ylabel("Fatalities", fontsize=20) 
 plt.bar(year, male, width=0.6)
@@ -48,6 +48,7 @@ n = [log_normal_distribution(i, mu, sigma) for i in year]
 plt.plot(year, n)
 plt.show()
 
+#女性の死亡者数のプロット
 plt.xlabel("Year", fontsize=20)  
 plt.ylabel("Fatalities", fontsize=20) 
 plt.bar(year, female, width=0.6)
